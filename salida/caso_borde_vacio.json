@@ -1,0 +1,11 @@
+{
+  "estructura": "Red-Black Tree",
+  "operaciones": [
+    {"op":"buscar","valor":5,"resultado":"no_encontrado","pasos":[{"accion":"no_encontrado","nota":"El 5 no está en el árbol","arbol":null}]},
+    {"op":"eliminar","valor":5,"resultado":"no_encontrado","pasos":[{"accion":"no_encontrado","nota":"El 5 no está en el árbol, no hay nada que eliminar","arbol":null}]},
+    {"op":"insertar","valor":7,"resultado":"ok","pasos":[{"accion":"insertar_nodo","nodo":7,"padre":null,"nota":"Se inserta el 7 en rojo como raíz","arbol":{"clave":7,"color":"R","izq":null,"der":null}},{"accion":"recolorear","nodos":[{"clave":7,"color":"N"}],"nota":"La raíz siempre tiene que ser negra","arbol":{"clave":7,"color":"N","izq":null,"der":null}}]},
+    {"op":"buscar","valor":7,"resultado":"encontrado","pasos":[{"accion":"encontrado","nodo":7,"nota":"Encontrado el 7","arbol":{"clave":7,"color":"N","izq":null,"der":null}}]},
+    {"op":"insertar","valor":7,"resultado":"duplicado","pasos":[{"accion":"duplicado","nodo":7,"nota":"El 7 ya existe, no se inserta","arbol":{"clave":7,"color":"N","izq":null,"der":null}}]},
+    {"op":"eliminar","valor":7,"resultado":"ok","pasos":[{"accion":"encontrado","nodo":7,"nota":"Encontrado el 7, se va a eliminar","arbol":{"clave":7,"color":"N","izq":null,"der":null}},{"accion":"eliminar_nodo","nodo":7,"nota":"Se quita el 7 del árbol","arbol":null}]}
+  ]
+}
